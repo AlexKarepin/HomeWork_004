@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HomeWork_004</string>
+    <string name="showFoto">Просмотр фото</string>
+    <string name="forth">Вперед</string>
+    <string name="back">Назад</string>
+</resources>
