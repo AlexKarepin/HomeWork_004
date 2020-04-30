@@ -2,6 +2,7 @@ package com.karepin.homework_004;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
         forth();
-
         back();
     }
     private void forth() {
         button = findViewById(R.id.button);
+
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 int number = random.nextInt(100);
                 String str = Integer.toString(number);
                 textView.setText(str);
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(intent);
+
             }
         });
     }
